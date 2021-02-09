@@ -1,0 +1,11 @@
+{
+    "theme": {
+        "colors": {
+            "yellow": "#F2E205",
+            "black": "#262626",
+            "purple": "#8D07F6",
+            "white": "#f4f4f4",
+            "gray": "#D4DBF5"
+        }
+    }
+}
