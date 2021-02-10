@@ -8,6 +8,7 @@ import BackgroundImage from '../src/components/BackgroundImage'
 import GitHubCorner from '../src/components/GitHubCorner'
 import CardRight from '../src/components/CardRight'
 import CardEnd from '../src/components/CardEnd'
+import { motion } from 'framer-motion'
 
 const Container = styled.div`
   display: flex;
@@ -48,7 +49,16 @@ export default function Home() {
     <Background>
 
       <Container>
-        <CardLeft>
+        <CardLeft
+          as={motion.section}
+          transition={{ delay: 0, duration: 0.5 }}
+          variants={{
+            show: { opacity: 1, x: '0' },
+            hidden: { opacity: 0, x: '-100%' },
+          }}
+          initial="hidden"
+          animate="show"
+        >
           <CardLeft.Header>
             <h1>Sobre mim</h1>
           </CardLeft.Header>
@@ -93,7 +103,16 @@ export default function Home() {
 
         </CardLeft>
 
-        <CardRight>
+        <CardRight
+          as={motion.section}
+          transition={{ delay: 0.5, duration: 0.5 }}
+          variants={{
+            show: { opacity: 1, y: '0' },
+            hidden: { opacity: 0, y: '100%' },
+          }}
+          initial="hidden"
+          animate="show"
+        >
 
           <CardRight.Card>
             <CardRight.Header>
@@ -120,7 +139,16 @@ export default function Home() {
         </CardRight>
 
 
-        <CardEnd>
+        <CardEnd
+          as={motion.section}
+          transition={{ delay: 1, duration: 0.5 }}
+          variants={{
+            show: { opacity: 1, y: '0' },
+            hidden: { opacity: 0, y: '-100%' },
+          }}
+          initial="hidden"
+          animate="show"
+        >
 
           <CardEnd.Card>
             <CardEnd.Header>
