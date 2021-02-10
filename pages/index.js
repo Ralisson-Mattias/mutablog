@@ -7,9 +7,12 @@ import Background from '../src/components/Background'
 import BackgroundImage from '../src/components/BackgroundImage'
 import GitHubCorner from '../src/components/GitHubCorner'
 import CardRight from '../src/components/CardRight'
+import CardEnd from '../src/components/CardEnd'
 
 const Container = styled.div`
   display: flex;
+
+  flex-wrap: wrap;
 `
 
 
@@ -28,6 +31,17 @@ export default function Home() {
     {
       nome: 'C#'
     },
+  ]
+
+  const projects = [
+    {
+      nome: 'https://github.com/Ralisson-Mattias/facebookClone',
+      projetctName: 'Facebook Clone'
+    },
+    {
+      nome: 'https://github.com/Ralisson-Mattias/realmDB',
+      projetctName: 'RealmDB'
+    }
   ]
 
   return (
@@ -104,6 +118,37 @@ export default function Home() {
           </CardRight.Card>
 
         </CardRight>
+
+
+        <CardEnd>
+
+          <CardEnd.Card>
+            <CardEnd.Header>
+              <h1>Alguns projetos</h1>
+            </CardEnd.Header>
+
+            <CardEnd.Content>
+
+              <ul>
+
+                {projects.map((result) => {
+                  return (
+                    <li key={result.nome}>
+                      <CardEnd.Topic
+                        href={result.nome}
+                      >
+                        {result.projetctName}
+                      </CardEnd.Topic>
+                    </li>
+                  )
+                })}
+
+              </ul>
+
+            </CardEnd.Content>
+          </CardEnd.Card>
+
+        </CardEnd>
 
       </Container>
 

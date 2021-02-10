@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 
-const CardRight = styled.div`
+const CardEnd = styled.div`
     margin: 50px;
     z-index: 10;
 `
 
-CardRight.Card = styled.div`
+CardEnd.Card = styled.div`
     border: 1px solid ${({ theme }) => theme.colors.black};
     background-color: 1px solid ${({ theme }) => theme.colors.purple};
     border-radius: 10px;
@@ -22,9 +22,9 @@ CardRight.Card = styled.div`
     }
 `
 
-CardRight.Header = styled.div`
+CardEnd.Header = styled.div`
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     padding: 18px 20px;
     background-color: ${({ theme }) => theme.colors.black};
@@ -35,10 +35,11 @@ CardRight.Header = styled.div`
     }
 `
 
-CardRight.Content = styled.div`
+CardEnd.Content = styled.div`
     padding: 10px;
     background-color: ${({ theme }) => theme.colors.purple};
     z-index: 10;
+
   & > *:first-child {
     margin-top: 0;
   }
@@ -48,24 +49,36 @@ CardRight.Content = styled.div`
   ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-direction: row;
   }
 `
 
-CardRight.Topic = styled.div`
-font-weight: 600;
+CardEnd.Topic = styled.a`
+
+  outline: 0;
+  text-decoration: none;
   color: ${({ theme }) => theme.colors.black};
   background-color: ${({ theme }) => `${theme.colors.yellow}`};
   padding: 10px 15px;
   margin-bottom: 8px;
+  cursor: pointer;
+  border-radius: 10px;
   transition: .3s;
   display: block;
-  border-radius: 10px;
+  margin-right: 5px;
   
   &:hover,
   &:focus {
-    opacity: .9;
+    opacity: .8;
   }
+
+  &:nth-last-child() {
+      margin-right: 0;
+  }
+
+  
 `;
 
 
-export default CardRight
+export default CardEnd

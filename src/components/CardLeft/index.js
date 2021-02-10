@@ -8,6 +8,7 @@ const CardLeft = styled.div`
   background-color: #262626;
   border-radius: 10px;
   overflow: hidden;
+  z-index: 10;
   h1, h2, h3 {
     font-size: 16px;
     font-weight: 700;
