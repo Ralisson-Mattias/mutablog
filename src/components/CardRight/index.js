@@ -3,6 +3,10 @@ import styled from 'styled-components'
 const CardRight = styled.div`
     margin: 50px;
     z-index: 10;
+
+    @media screen and (max-width: 500px) { 
+      width: 100%;
+  }
 `
 
 CardRight.Card = styled.div`
@@ -19,6 +23,10 @@ CardRight.Card = styled.div`
       font-size: 14px;
       font-weight: 600;
       line-height: 1;
+    }
+
+    @media screen and (max-width: 500px) { 
+      width: 100%;
     }
 `
 
