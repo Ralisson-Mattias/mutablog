@@ -3,6 +3,10 @@ import styled from 'styled-components'
 const CardEnd = styled.div`
     margin: 50px;
     z-index: 10;
+
+    @media screen and (max-width: 500px) { 
+      width: 100%;
+  }
 `
 
 CardEnd.Card = styled.div`
@@ -51,6 +55,12 @@ CardEnd.Content = styled.div`
     padding: 0;
     display: flex;
     flex-direction: row;
+  }
+
+  @media screen and (max-width: 500px) { 
+      ul {
+          justify-content: space-between;
+      }
   }
 `
 

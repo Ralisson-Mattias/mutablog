@@ -19,6 +19,10 @@ const CardLeft = styled.div`
     font-weight: 600;
     line-height: 1;
   }
+
+  @media screen and (max-width: 500px) { 
+      width: 100%;
+  }
 `
 
 CardLeft.Header = styled.header`

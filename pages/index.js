@@ -54,7 +54,7 @@ export default function Home() {
           </CardLeft.Header>
 
           <CardLeft.Content>
-            <p>Olá, meu nome é Ralisson. Tenho 19 anos e atualmente estou buscando uma oportunidade no mercado de trabalho. Sou apaixonado por tecnologia. Atualmente estou focado no desenvolvimento de aplicações móveis</p>
+            <p>Olá, meu nome é Ralisson. Tenho 19 anos e atualmente estou buscando uma oportunidade no mercado de trabalho. Sou apaixonado por tecnologia. Atualmente estou focado no desenvolvimento de aplicações para dispositivos móveis.</p>
           </CardLeft.Content>
 
           <CardLeft.ContentIcons>
