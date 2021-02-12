@@ -12,8 +12,11 @@ import { motion } from 'framer-motion'
 
 const Container = styled.div`
   display: flex;
-
   flex-wrap: wrap;
+
+  @media screen and (max-width: 500px) { 
+      justify-content: center;
+  }
 `
 
 
@@ -29,9 +32,6 @@ export default function Home() {
     {
       nome: 'Php'
     },
-    {
-      nome: 'C#'
-    },
   ]
 
   const projects = [
@@ -42,7 +42,11 @@ export default function Home() {
     {
       nome: 'https://github.com/Ralisson-Mattias/realmDB',
       projetctName: 'RealmDB'
-    }
+    },
+    {
+      nome: 'https://github.com/Ralisson-Mattias/redux',
+      projetctName: 'Redux'
+    },
   ]
 
   return (

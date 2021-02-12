@@ -61,6 +61,7 @@ CardEnd.Content = styled.div`
       ul {
           justify-content: space-between;
       }
+
   }
 `
 
